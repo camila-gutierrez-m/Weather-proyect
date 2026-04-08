@@ -1,0 +1,10 @@
+$(<button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="button"
+    aria-pressed="false"
+    autocomplete="off"
+>
+    Button
+</button>
+)
