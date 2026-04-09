@@ -1,15 +1,18 @@
 
-body{background-color: rgb(128, 248, 238);
+body{background-color: rgb(179, 240, 219);
+}
+.cad-desck{height: 30px;
+
 }
 h1{text-align: justify;
     color: rgb(136, 134, 124);
     line-height: 95%;
 
 }
-h5{
-text-align: center;
+.tem{text-align: justify;
+
 }
-p{
-    color: rgb(12, 12, 11);
-    text-align: center;
+footer{ text-align-last: center;
+    
+
 }
