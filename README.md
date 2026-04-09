@@ -36,7 +36,7 @@ El proyecto incluye:
 ## 🚀 Instalación y uso
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/constanzasaez/proyecto# proyecto-clima-m2
+git clone https://github.com/camila-gutierrez-m/Weather-proyect.git
 # Weather Frontend M2 🌦️
 
 ## 📌 Propósito
