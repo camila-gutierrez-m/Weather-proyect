@@ -74,4 +74,5 @@ El proyecto incluye:
 ## 🚀 Instalación y uso
 1. Clona el repositorio:
 ```bash
-git 
+git clone
+https://github.com/camila-gutierrez-m/Weather-proyect.git
