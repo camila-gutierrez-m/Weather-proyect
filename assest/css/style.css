@@ -1,12 +1,12 @@
 
 body{background-color: rgb(179, 240, 219);
 }
-.cad-desck{height: 30px;
+.cad-desck{width: 20px;
 
 }
 h1{text-align: justify;
     color: rgb(136, 134, 124);
-    line-height: 95%;
+    font-size: 85px;
 
 }
 .tem{text-align: justify;
@@ -14,5 +14,16 @@ h1{text-align: justify;
 }
 footer{ text-align-last: center;
     
+}
+.card-header{border-color: bisque;
 
 }
+.card{text-align: center; border: 60xpcqmin;
+    
+}
+card-img-top{width: 5%;
+    height: 1%; /* Altura fija para uniformidad */
+    object-fit: none; /* Recorta la imagen para llenar el espacio sin deformarse */
+    display: flexbox;
+  }
+
