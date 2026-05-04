@@ -1,0 +1,10 @@
+@use"../abstracts/mixins" as *;
+h2{
+    @include estilo-titulos;
+}
+
+h3{
+    @include estilo-titulos;
+}
+
+

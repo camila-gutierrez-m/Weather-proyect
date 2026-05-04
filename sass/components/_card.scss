@@ -1,0 +1,32 @@
+
+.card{
+    margin: auto;
+  border-radius: 20%;
+height: 50%;
+width: 50%;
+
+}
+
+.card-img-top{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.card-title{
+  text-align: center;
+}
+.card-text{
+  text-align: center;
+}
+.card-img{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 25px;
+}
+
+.card-header{
+  text-align: center;
+}

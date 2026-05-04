@@ -1,5 +1,5 @@
 
-# Weather Frontend M2 🌦️
+# Weather Front-end M3 🌦️
 
 ## 📌 Propósito
 Este proyecto es un **MVP (Minimum Viable Product)** de una aplicación de clima, desarrollado con **HTML5 semántico**, **Bootstrap** para estilos y diseño responsivo, y **JavaScript básico** para la interacción.
@@ -63,8 +63,8 @@ El proyecto incluye:
 - Interacciones básicas con JS (click en card/botón para ver detalle).
 
 ## 🛠️ Tecnologías utilizadas
-- **HTML5 semántico** (header, nav, main, section, article, footer).
-- **Bootstrap 5** (CDN):
+- **HTML5 semántico** (header, nav, main, section, footer).
+- **Bootstrap 4** (CDN):
 - Grid system (contenedores, filas, columnas).
 - Utilidades (espaciados, tipografía, display).
 - Componentes: navbar, card, badge, list-group, button.

@@ -1,29 +1,64 @@
+body {
+  background-color: rgb(179, 240, 219);
+}
 
-body{background-color: rgb(179, 240, 219);
+h2 {
+  text-align: center;
+  color: rgb(155, 151, 134);
+  font-size: 45px;
 }
-.cad-desck{width: 20px;
 
+h3 {
+  text-align: center;
+  color: rgb(155, 151, 134);
+  font-size: 45px;
 }
-h1{text-align: justify;
-    color: rgb(136, 134, 124);
-    font-size: 85px;
 
+footer {
+  text-align-last: center;
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.tem{text-align: justify;
 
+.card-deck {
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  height: auto;
+  padding-top: 18px;
 }
-footer{ text-align-last: center;
-    
-}
-.card-header{border-color: bisque;
 
+.card {
+  margin: auto;
+  border-radius: 20%;
+  height: 50%;
+  width: 50%;
 }
-.card{text-align: center; border: 60xpcqmin;
-    
-}
-card-img-top{width: 5%;
-    height: 1%; /* Altura fija para uniformidad */
-    object-fit: none; /* Recorta la imagen para llenar el espacio sin deformarse */
-    display: flexbox;
-  }
 
+.card-img-top {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+
+.card-header {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
