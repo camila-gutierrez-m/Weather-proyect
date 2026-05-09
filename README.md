@@ -34,10 +34,10 @@ El proyecto incluye:
 - **Git/GitHub** para control de versiones.
 
 ## Cambios hechos en esta Nueva Versión
-**Utilización de metodología BEM para la organización de mis clases en el codigo par que esten de manerra mas facíl de comprender.
-**Utilzación de prepocesador sass de css, separar la escrutura de codigo css en carpetas y que sea mas facil corregir o actualizar en versiones futuras.
-**Se agregan dos nuevas Cuidades en la entrega de imformacion del clima.
-**Se mejora la app en el interfas de usuario dandole una mejor interactividad y haciendolo más ataracctiva la aplicación para el usuario.
+- Utilización de metodología BEM para la organización de mis clases en el codigo para que esten de manerra mas facíl de comprender.
+- Utilzación de prepocesador sass de css, separar la escrutura de codigo css en carpetas y que sea mas facil corregir o actualizar en versiones futuras.
+- Se agregan dos nuevas Cuidades en la entrega de imformacion del clima.
+- Se mejora la app en el interfas de usuario dandole una mejor interactividad y haciendolo más ataracctiva la aplicación para el usuario.
 
 ## 🚀 Instalación y uso
 1. Clona el repositorio:
