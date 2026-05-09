@@ -36,29 +36,41 @@ footer {
   width: 50%;
 }
 
-.card-img-top {
+.card__title {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(146, 142, 142);
+}
+
+.icono {
   width: 50%;
   margin: auto;
   padding: 10px;
 }
 
-.card-title {
+.card__body {
   text-align: center;
+  border-radius: 30px;
 }
 
-.card-text {
-  text-align: center;
-}
-
-.card-img {
+.card__ic {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 25px;
 }
 
-.card-header {
+.header {
   text-align: center;
+}
+
+.boton {
+  font-size: small;
+  border-bottom: 50px;
+  background-color: rgb(148, 146, 146);
+}
+
+.boton--modificado {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

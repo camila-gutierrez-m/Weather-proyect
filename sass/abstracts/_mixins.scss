@@ -3,4 +3,7 @@
     color: rgb(155, 151, 134);
     font-size: 45px;
 }
+@mixin centrado-texto {
+    text-align: center;
+}
 
