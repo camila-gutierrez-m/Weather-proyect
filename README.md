@@ -1,84 +1,40 @@
 
-# Weather Front-end M3 🌦️
+# Weather Front-end M4 🌦️
 
 ## 📌 Propósito
-Este proyecto es un **MVP (Minimum Viable Product)** de una aplicación de clima, desarrollado con **HTML5 semántico**, **Bootstrap** para estilos y diseño responsivo, y **JavaScript básico** para la interacción.
-La idea es practicar la estructuración de páginas, el uso de componentes de Bootstrap y la manipulación del DOM con eventos simples.
-
-## 🎯 Objetivos de aprendizaje
-- Estructurar páginas con HTML5 semántico.
-- Aplicar Bootstrap (grid, utilidades, componentes) para un layout responsivo (mobile-first).
-- Manipular el DOM con JavaScript (eventos y estados simples).
-- Gestionar el proyecto con Git/GitHub (commits descriptivos, ramas y README).
-
-## 📂 Alcance (MVP)
-El proyecto incluye:
-- **Inicio (Home):** grilla de ≥10 localidades presentadas como cards de Bootstrap con clima actual (icono, temperatura, estado).
-- **Detalle de localidad:** vista con datos ampliados de la ciudad seleccionada (temperatura, humedad, viento) y pronóstico semanal.
-- **Navbar:** enlaces a Home, Detalle y (opcional) Acerca de.
-- **Footer:** información básica del proyecto.
+Este proyecto es una aplicación de clima, desarrollado con **HTML5 semántico**, **Bootstrap** para estilos y diseño responsivo, y **JavaScript** para la interacción.
+Manipulación del DOM con eventos simples.
+Gestionar el proyecto con Git/GitHub (commits descriptivos, ramas y README).
 
 ## ⚙️ Requisitos funcionales
-- Listado de ≥10 localidades en Home con cards informativas.
+- Listado de 12 localidades en Home con cards informativas.
 - Al seleccionar una localidad, navegar a Detalle y mostrar el pronóstico semanal.
-- Diseño **responsive**: se debe ver bien en móvil (≤420 px) y escritorio (≥1024 px).
-- Interacciones básicas con JS (click en card/botón para ver detalle).
+- Diseño **responsive**:  (≤420 px) y (≥1024 px).
+- Uso de JS intermedio para que los imformación no este quemada en en HTML.
 
 ## 🛠️ Tecnologías utilizadas
-- **HTML5 semántico** (header, nav, main, section, article, footer).
-- **Bootstrap 5** (CDN):
-- Grid system (contenedores, filas, columnas).
-- Utilidades (espaciados, tipografía, display).
-- Componentes: navbar, card, badge, list-group, button.
-- **JavaScript** para interacción básica.
-- **Git/GitHub** para control de versiones.
+- **HTML5 semántico** .
+- **Bootstrap 4.6** (CDN):
+├── Grid system .
+├── Utilidades .
+├──Componentes.
+- **JavaScript** 
+Variables (const, let)
+├── Arrays y Objetos
+├── forEach y map
+├── Condicionales (if/else)
+├── Manipulación del DOM
+├── URLSearchParams
+├── Funciones
+└── Template Literals para interacción básica.
+- **Git/GitHub** 
+- Para control de versiones.
 
-## Cambios hechos en esta Nueva Versión
-- Utilización de metodología BEM para la organización de mis clases en el codigo para que esten de manerra mas facíl de comprender.
-- Utilzación de prepocesador sass de css, separar la escrutura de codigo css en carpetas y que sea mas facil corregir o actualizar en versiones futuras.
-- Se agregan dos nuevas Cuidades en la entrega de imformacion del clima.
-- Se mejora la app en el interfas de usuario dandole una mejor interactividad y haciendolo más ataracctiva la aplicación para el usuario.
+## Cambios  en esta Actuaización de Versión
+- en esta nueva actualización hicimos un cambio interno en cuanto en donde tenemos ingresada nuestra informacion, pasando de tener la imfromación de forma quemada en HMTL a la utilización de Javascript para el manejo de la imformacion ocupando funcionalidades caracteristicas de js. 
+
 
 ## 🚀 Instalación y uso
 1. Clona el repositorio:
 ```bash
 git clone https://github.com/camila-gutierrez-m/Weather-proyect.git
-# Weather Frontend M3 🌦️
-
-## 📌 Propósito
-Este proyecto es un **MVP (Minimum Viable Product)** de una aplicación de clima, desarrollado con **HTML5 semántico**, **Bootstrap** para estilos y diseño responsivo, y **JavaScript básico** para la interacción.
-La idea es practicar la estructuración de páginas, el uso de componentes de Bootstrap y la manipulación del DOM con eventos simples.
-
-## 🎯 Objetivos de aprendizaje
-- Estructurar páginas con HTML5 semántico.
-- Aplicar Bootstrap (grid, utilidades, componentes) para un layout responsivo (mobile-first).
-- Manipular el DOM con JavaScript (eventos y estados simples).
-- Gestionar el proyecto con Git/GitHub (commits descriptivos, ramas y README).
-
-## 📂 Alcance (MVP)
-El proyecto incluye:
-- **Inicio (Home):** grilla de ≥10 localidades presentadas como cards de Bootstrap con clima actual (icono, temperatura, estado).
-- **Detalle de localidad:** vista con datos ampliados de la ciudad seleccionada (temperatura, humedad, viento) y pronóstico semanal.
-- **Navbar:** enlaces a Home, Detalle y (opcional) Acerca de.
-- **Footer:** información básica del proyecto.
-
-## ⚙️ Requisitos funcionales
-- Listado de ≥10 localidades en Home con cards informativas.
-- Al seleccionar una localidad, navegar a Detalle y mostrar el pronóstico semanal.
-- Diseño **responsive**: se debe ver bien en móvil (≤420 px) y escritorio (≥1024 px).
-- Interacciones básicas con JS (click en card/botón para ver detalle).
-
-## 🛠️ Tecnologías utilizadas
-- **HTML5 semántico** (header, nav, main, section, footer).
-- **Bootstrap 4** (CDN):
-- Grid system (contenedores, filas, columnas).
-- Utilidades (espaciados, tipografía, display).
-- Componentes: navbar, card, badge, list-group, button.
-- **JavaScript** para interacción básica.
-- **Git/GitHub** para control de versiones.
-
-## 🚀 Instalación y uso
-1. Clona el repositorio:
-```bash
-git clone
-https://github.com/camila-gutierrez-m/Weather-proyect.git

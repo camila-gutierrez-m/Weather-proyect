@@ -1,20 +1,24 @@
 const ciudades = [
   {
-    cuidad: 1,
+    ciudad: 1,
     nombre: "San Antonio",
     temp: "10°/27°",
     link: "detalles_1.html",
     img: "assets/image/sol.png",
     dia: "hoy",
+    foto: "assets/image/Puerto de San Antonio.jpg",
+    termometro: "/assets/image/thermometer-sun.svg",
+    viento: "assets/image/wind.svg",
+    wind: "15-30 km/h",
     pronosticoSemanal: [
       { dia: "Lunes", min: 18, max: 24, estado: "Soleado" },
       { dia: "Martes", min: 17, max: 23, estado: "Soleado" },
       { dia: "Miercoles", min: 18, max: 24, estado: "Soleado" },
-      { dia: "Jueves", min: 17, max: 23, estado: "Nublado" },
+      { dia: "Jueves", min: 11, max: 19, estado: "Nublado" },
       { dia: "Viernes", min: 18, max: 24, estado: "Soleado" },
-      { dia: "Sabado", min: 17, max: 23, estado: "Nublado" },
+      { dia: "Sabado", min: 10, max: 17, estado: "Nublado" },
       { dia: "Domingo", min: 18, max: 24, estado: "Soleado" },
-      ]
+    ],
   },
 
   {
@@ -58,7 +62,7 @@ const ciudades = [
   },
 
   {
-    ciudad:7,
+    ciudad: 7,
     nombre: "Serena",
     temp: "12°/18°",
     img: "assets/image/sol.png",
@@ -66,7 +70,7 @@ const ciudades = [
   },
 
   {
-    id: 8,
+    ciudad: 8,
     nombre: "Valdivia",
     temp: "7°/18°",
     img: "assets/image/parcialmente nublado.jpg",
@@ -81,7 +85,7 @@ const ciudades = [
     dia: "Hoy",
   },
 
-  { 
+  {
     ciudad: 10,
     nombre: "Melipilla",
     temp: "12°/18°",
@@ -108,28 +112,61 @@ const ciudades = [
 const principal = document.getElementById("principal");
 const detalles = document.getElementById("detalles");
 
-if(principal) {
+if (principal) {
+  ciudades.forEach((ciudad) => {
+    let clase = "";
 
+    if (!ciudad.pronosticoSemanal) {
+      clase = "disabled";
+    }
 
-  ciudades.forEach(ciudad => {
-
-      let clase = "";
-
-      if (!ciudad.pronosticoSemanal) {
-          clase = "disabled";
-      }
-
-      principal.innerHTML += 
-      `<div class="row">
+    principal.innerHTML += `<div class="row">
       <div class="card card">
       <img src="${ciudad.img}" class="card-img-top icono" alt="...">
       <div class="card-body card__body">
         <h5 class="card-title  card__title">${ciudad.nombre} </h5>
       <p class="card-text">${ciudad.temp}</p>
        <p class="card-text"><small class="text-muted">${ciudad.dia} </small></p>
-       <a class="btn btn-primary boton ${clase}" href="detalles_1.html?id=${ciudad.id}"  role="button">Detalle</a>
+       <a class="btn btn-primary boton ${clase}" href="detalles.html?ciudad=${ciudad.ciudad}"  role="button">Detalle</a>
       </div>`;
-
-
   });
+}
+
+if (detalles) {
+  const params = new URLSearchParams(window.location.search);
+
+  const idUrl = Number(params.get("ciudad"));
+  ciudades.forEach((ciudad) => {
+    if (ciudad.ciudad === idUrl) {
+      detalles.innerHTML += ` 
+    <div class="card-header  header">
+    <img src="${ciudad.foto}" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${ciudad.nombre}</h5>
+      <p>${ciudad.dia}</p>
+      <img src="${ciudad.termometro}" class="card-img card__ic" alt="#"/>
+      <p class="card-text">${ciudad.temp}</p>
+     <img src="${ciudad.viento}" class="card-img card__ic">
+      <p class="card-text">${ciudad.wind}</p>
+    </div>
+  </div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h3> Pronostico Semanal </h3>
+        ${ciudad.pronosticoSemanal.map(dia => `
+        <div class="card mb-2">
+          <div class="card-body">
+            <h6 class="card-title">${dia.dia}</h6>
+            <p class="card-text">Min ${dia.min}° / Max ${dia.max}°</p>
+            <p class="card-text">${dia.estado}</p>
+          </div>
+        </div>
+      `).join("")}
+    </div>
+  </div>
+`;
+    }
+  });
+  
 }
