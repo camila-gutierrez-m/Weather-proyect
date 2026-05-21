@@ -184,7 +184,7 @@ const conteo = {};
           }
           }
   
-  document.getElementById("conteo").innerHTML = `Mayormente ${estadoGanador}, ${cantidadGanadora} días`;
+  document.getElementById("conteo").innerHTML = `Semana mayormente ${estadoGanador}, ${cantidadGanadora} días`;
     }
   });
     }
