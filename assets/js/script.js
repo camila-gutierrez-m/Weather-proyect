@@ -3,7 +3,7 @@ const ciudades = [
     ciudad: 1,
     nombre: "San Antonio",
     temp: "10°/27°",
-    link: "detalles_1.html",
+    link: "detalles.html",
     img: "assets/image/sol.png",
     dia: "hoy",
     foto: "assets/image/Puerto de San Antonio.jpg",
@@ -120,8 +120,9 @@ if (principal) {
       clase = "disabled";
     }
 
-    principal.innerHTML += `<div class="row">
-      <div class="card card">
+    principal.innerHTML += 
+    `<div class="col g-4">
+      <div class="card h-100 card">
       <img src="${ciudad.img}" class="card-img-top icono" alt="...">
       <div class="card-body card__body">
         <h5 class="card-title  card__title">${ciudad.nombre} </h5>
@@ -166,7 +167,27 @@ if (detalles) {
     </div>
   </div>
 `;
+const conteo = {};
+ ciudad.pronosticoSemanal.forEach((dia) => {
+    if (conteo[dia.estado]) {
+      conteo [dia.estado] += 1;
+        } else {
+          conteo[dia.estado] = 1;
+        }
+      });
+        let estadoGanador = "";
+        let cantidadGanadora = 0;
+        for (let estado in conteo){
+          if (conteo[estado] > cantidadGanadora) {
+            cantidadGanadora = conteo[estado];
+            estadoGanador = estado;
+          }
+          }
+  
+  document.getElementById("conteo").innerHTML = `Mayormente ${estadoGanador}, ${cantidadGanadora} días`;
     }
   });
+    }
   
-}
+
+
